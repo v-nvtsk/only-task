@@ -5,6 +5,9 @@ import CopyWebpackPlugin from "copy-webpack-plugin";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const PUBLIC_PATH = process.env.CI
+  ? "/only-task/"
+  : "/";
 
 const config = (env) => {
   const isDev = env.mode === "development";
@@ -18,7 +21,7 @@ const config = (env) => {
       clean: true,
       path: path.resolve(__dirname, "dist"),
       filename: "bundle.js",
-      publicPath: "/",
+      publicPath: PUBLIC_PATH,
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".jsx"],
