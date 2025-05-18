@@ -15,11 +15,7 @@ function App() {
   const [data, setData] = useState<Period[]>([]);
 
   useEffect(() => {
-    const directoryPath = window.location.pathname
-      .split('/')
-      .slice(0, -1)
-      .join('/') + '/';
-    fetch(`./${directoryPath}/data.json`)
+    fetch('./data.json')
       .then((res): Promise< { periods: Period[] }> => res.json())
       .then((res) => setData(res.periods))
       .catch((err: unknown) => {
