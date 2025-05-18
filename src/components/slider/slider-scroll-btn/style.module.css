@@ -1,0 +1,43 @@
+.btn {
+  color: #3877EE;
+}
+
+@media(hover:none) {
+
+  .btn:focus,
+  .btn:active {
+    user-select: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn:active {
+    background-color: #3877EE;
+    color: white;
+  }
+
+}
+
+@media (hover) {
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: #3877EE;
+    color: white;
+  }
+}
+
+.buttonWrapper {
+  margin-top: 41px;
+  width: 80px;
+  min-width: 80px;
+  min-height: 100%;
+}
+
+
+@media screen and (width<=640px) {
+
+  .buttonWrapper {
+    display: none;
+  }
+}

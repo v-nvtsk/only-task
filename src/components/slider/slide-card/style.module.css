@@ -1,0 +1,41 @@
+.year {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #3877EE;
+}
+
+.description {
+  margin-top: 11px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #42567A;
+}
+
+@media screen and (width<=640px) {
+
+  .slide {
+    opacity: 0.6;
+  }
+
+  .slideActive {
+    opacity: 1;
+  }
+
+  .year {
+    font-size: 16px;
+  }
+
+  .description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 145%;
+    color: #42567A;
+  }
+}

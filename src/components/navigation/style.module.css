@@ -1,0 +1,79 @@
+.navigation {
+  display: grid;
+  grid-template-areas:
+    "info info"
+    "prev next";
+  gap: 20px;
+  max-width: 120px;
+  margin-top: -48px;
+  margin-left: 80px;
+}
+
+.info {
+  grid-area: info;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #42567A;
+}
+
+.btn {
+  position: relative;
+  height: 50px;
+  aspect-ratio: 1/1;
+  color: rgb(66 86 122 / 50%);
+  border: 1px solid rgb(66 86 122 / 50%);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms;
+}
+
+.prev {
+  grid-area: prev;
+}
+
+.next {
+  grid-area: next;
+  transform: rotate(180deg);
+}
+
+@media (hover) {
+
+  .btn:hover {
+    border-color: #42567A;
+    background-color: #42567A;
+    color: white;
+  }
+}
+
+@media(hover:none) {
+
+  .btn:active {
+    border-color: #42567A;
+    background-color: #42567A;
+    color: white;
+  }
+}
+
+@media screen and (width<=640px) {
+
+  .navigation {
+    gap: 8px;
+    margin-left: 0;
+    margin-top: auto;
+    max-width: 58px;
+  }
+
+  .btn {
+    height: 25px;
+
+    svg {
+      transform: scale(0.5)
+    }
+  }
+}
