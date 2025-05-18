@@ -1,0 +1,39 @@
+.title {
+  position: absolute;
+  top: 170px;
+  margin-bottom: 0;
+  left: 80px;
+  width: 353px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #42567A;
+  min-width: 353px;
+  margin-block-start: 0;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  min-width: 5px;
+  height: 134px;
+  left: -80px;
+  top: 0;
+  background: linear-gradient(to bottom, #3877EE, #EF5DA8)
+}
+
+@media screen and (width<=640px) {
+
+  .title {
+    position: static;
+    font-size: 20px;
+    left: 0;
+    margin-top: 39px;
+    max-width: 123px;
+    min-width: auto;
+  }
+
+  .title::before {
+    display: none;
+  }
+}

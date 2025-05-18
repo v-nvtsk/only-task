@@ -1,0 +1,22 @@
+.grid {
+  position: relative;
+  display: block;
+  grid-template-areas:
+    "selector"
+    "navigation"
+    "slider";
+}
+
+@media (width<=640px) {
+
+  .grid {
+    height: 240px;
+    margin-top: 78px;
+    display: grid;
+    grid-template: "slider slider" 180px "navigation selector" 50px / 58px minmax(0, 1fr);
+    column-gap: 38px;
+    align-content: space-between;
+    max-width: 100vw;
+    width: 100%;
+  }
+}

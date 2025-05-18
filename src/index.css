@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+body,
+#root {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  flex-direction: column;
+}
+
+@media screen and (width<=640px) {
+
+  #root {
+    min-width: auto;
+    width: 100%;
+    min-height: auto;
+    height: 100dvh;
+    max-height: 100dvh;
+  }
+}

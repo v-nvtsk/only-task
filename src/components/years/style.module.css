@@ -1,0 +1,58 @@
+.years {
+  position: absolute;
+  top: 403px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 160px;
+  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+}
+
+.from {
+  color: #5D5FEF;
+}
+
+.to {
+  color: #EF5DA8;
+}
+
+@media screen and (width<=1024px) {
+
+  .years {
+    font-size: 150px;
+  }
+}
+
+@media screen and (width<=768px) {
+
+  .years {
+    font-size: 120px;
+  }
+}
+
+@media screen and (width<=640px) {
+
+  .years {
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin-top: 56px;
+    font-size: 56px;
+    justify-content: space-between;
+    transform: none;
+    line-height: 72px;
+    gap: 0;
+  }
+
+  .years::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1px solid #C7CDD9;
+    top: 100%;
+    transform: translateY(58px);
+  }
+}
