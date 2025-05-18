@@ -27,7 +27,11 @@ export const CustomSwiper = ({ children, onInit, ...props }: CustomSwiperProps) 
         slidesPerView: 3,
         spaceBetween: 80,
       },
-      320: {
+      640: {
+        slidesPerView: 2.5,
+        spaceBetween: 25,
+      },
+      300: {
         slidesPerView: 1.5,
         spaceBetween: 25,
       },
